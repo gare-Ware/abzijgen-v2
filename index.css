@@ -1,0 +1,188 @@
+html {
+    --green: #94C671;
+    --gold: #C49406;
+    --red: #930708;
+    --white: #F5F5F5;
+    --black: #252525;
+    --gray: #454545;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    text-align: center;
+    font-family: inherit;
+    padding: .7em 0;
+    border-radius: 10px;
+    color: var(--black);
+}
+
+/* ---Intro--- */
+
+.intro {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    background-image: url("imgs/abzijgen-flower-top-left.svg"), 
+                      url("imgs/abzijgen-leaf-left.svg"), 
+                      url("imgs/abzijgen-leaf-right.svg"),
+                      url("imgs/abzijgen-leaf-flat-right.svg"),
+                      url("imgs/abzijgen-star.svg"),
+                      url("imgs/abzijgen-star.svg"),
+                      url("imgs/abzijgen-star.svg"),
+                      url("imgs/abzijgen-star.svg"),
+                      url("imgs/abzijgen-star.svg");
+    background-repeat: no-repeat;
+    background-size: 25%, /* flower top left */
+                     10%, /* leaf-left */
+                     15%, /* leaf-right */
+                     25%, /* leaf-flat-right */
+                     10%, /* star */
+                     5%, /* star */
+                     8%, /* star */
+                     4%, /* star */
+                     8%; /* star */
+    background-position: 0% 0%, /* flower top left */
+                         55% 4%, /* leaf-left */
+                         67% 8%, /* leaf-right */
+                         -10% 65%, /* leaf-flat-right */
+                         90% 6%, /* star */
+                         5% 31%, /* star */
+                         15% 33%, /* star */
+                         92% 60%, /* star */
+                         87% 64%; /* star */
+}
+.intro__logo {
+    margin-top: 60px;
+}
+.intro__tincture {
+}
+.intro__cbd {
+    width: 95%;
+}
+.intro__colorado {
+    color: var(--green);
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    margin-top: .25em;
+}
+.intro__find-out {
+    letter-spacing: .5px;
+    margin-top: 50px;
+}
+.intro__email-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em;
+}
+.intro__email-input {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+.intro__get-notified-btn {
+    width: 100%;
+    border: none;
+    background-color: var(--green);
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .8px;
+    padding: .85em 0;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 300ms;
+    cursor: pointer;
+}
+.intro__email-us {
+    border-bottom: solid #F5F5F5 1px;
+    letter-spacing: .7px;
+}
+
+/* ---Section container--- */
+
+.container {
+    padding: 0em 1em 2em 1em;
+    margin-bottom: 2em;
+}
+
+/* ---About us--- */
+
+.about-us {
+    background-image: url(imgs/abzijgen-star.svg), 
+                      url(imgs/abzijgen-star.svg), 
+                      url(imgs/abzijgen-star.svg);
+    background-repeat: no-repeat;
+    background-size: 10%, 
+                     5%, 
+                     8%;
+    background-position: 10% 0%, 
+                         95% 91%, 
+                         84% 98%;
+}
+.about-us__header {
+    font-weight: 400;
+    color: var(--green);
+    letter-spacing: 1px;
+}
+.about-us__p {
+    line-height: 1.7;
+}
+.about-us__drum {
+    width: 80%;
+}
+.about-us__maraca {
+    width: 50%;
+}
+
+/* ---In-store locations--- */
+
+.locations {
+    margin-bottom: 0;
+    background-image: url(imgs/abzijgen-leaf-slight-right.svg), 
+                      url(imgs/abzijgen-leaf-flat-right.svg),
+                      url(imgs/abzijgen-star.svg);
+    background-repeat: no-repeat;
+    background-size: 30%, 
+                     25%,
+                     10%;
+    background-position: -15% 100%, 
+                         12% 100%,
+                         91% 84%;
+}
+.locations__header {
+    font-weight: 400;
+    color: var(--green);
+    letter-spacing: 1px;
+}
+.locations__list {
+    list-style: none;
+    padding: 0;
+}
+.locations__list li {
+    background-color: var(--gray);
+    padding: 1em 0;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+.locations__list li strong {
+    color: var(--gold);
+}
