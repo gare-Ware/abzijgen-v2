@@ -62,12 +62,12 @@ input {
     background-position: 0% 0%, /* flower top left */
                          55% 4%, /* leaf-left */
                          67% 8%, /* leaf-right */
-                         -10% 65%, /* leaf-flat-right */
-                         90% 6%, /* star */
-                         5% 31%, /* star */
-                         15% 33%, /* star */
-                         92% 60%, /* star */
-                         87% 64%; /* star */
+                         -10% 75%, /* leaf-flat-right */
+                         90% 6%, /* star 1 */
+                         5% 34%, /* star 2 */
+                         15% 37%, /* star 3 */
+                         92% 67%, /* star 4 */
+                         87% 71%; /* star 5 */
 }
 .intro__logo {
     margin-top: 60px;
@@ -83,9 +83,9 @@ input {
     letter-spacing: 1px;
     margin-top: .25em;
 }
-.intro__find-out {
+.intro__find-product {
     letter-spacing: .5px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .intro__email-form {
     display: flex;
@@ -96,8 +96,8 @@ input {
     font-size: 1.2rem;
     margin-bottom: 1em;
 }
-.intro__get-notified-btn {
-    width: 100%;
+.intro__find-btn {
+    width: 90%;
     border: none;
     background-color: var(--green);
     color: var(--black);
@@ -106,12 +106,13 @@ input {
     letter-spacing: .8px;
     padding: .85em 0;
     margin-bottom: 1em;
+    margin: 0 1em 1em 1em;
     border-radius: 10px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: transform 300ms;
     cursor: pointer;
 }
-.intro__email-us {
+.intro__contact-us {
     border-bottom: solid #F5F5F5 1px;
     letter-spacing: .7px;
 }
