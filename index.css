@@ -1,4 +1,5 @@
 html {
+    scroll-behavior: smooth;
     --green: #94C671;
     --gold: #C49406;
     --red: #930708;
@@ -26,13 +27,44 @@ a {
     text-decoration: none;
 }
 
-input {
+input, textarea {
     border: none;
-    text-align: center;
     font-family: inherit;
-    padding: .7em 0;
+    padding: .7em;
     border-radius: 10px;
+    color: var(--white);
+    background-color: var(--gray);
+}
+
+::placeholder {
+    color: var(--white);
+    opacity: .6;
+}
+
+.site-btn {
+    display: block;
+    width: 90%;
+    border: none;
+    background-color: var(--green);
     color: var(--black);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .8px;
+    padding: .85em 0;
+    margin-bottom: 1em;
+    margin: 0 1em 1em 1em;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 300ms;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.section-header {
+    font-weight: 400;
+    color: var(--green);
+    letter-spacing: 1px;
+    font-size: 2rem;
 }
 
 /* ---Intro--- */
@@ -87,30 +119,9 @@ input {
     letter-spacing: .5px;
     margin-top: 30px;
 }
-.intro__email-form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 1em;
-}
-.intro__email-input {
-    font-size: 1.2rem;
-    margin-bottom: 1em;
-}
+
 .intro__find-btn {
-    width: 90%;
-    border: none;
-    background-color: var(--green);
-    color: var(--black);
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: .8px;
-    padding: .85em 0;
-    margin-bottom: 1em;
-    margin: 0 1em 1em 1em;
-    border-radius: 10px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 300ms;
-    cursor: pointer;
+
 }
 .intro__contact-us {
     border-bottom: solid #F5F5F5 1px;
@@ -139,9 +150,7 @@ input {
                          84% 98%;
 }
 .about-us__header {
-    font-weight: 400;
-    color: var(--green);
-    letter-spacing: 1px;
+
 }
 .about-us__p {
     line-height: 1.7;
@@ -157,21 +166,19 @@ input {
 
 .locations {
     margin-bottom: 0;
-    background-image: url(imgs/abzijgen-leaf-slight-right.svg), 
-                      url(imgs/abzijgen-leaf-flat-right.svg),
+    background-image: url(imgs/abzijgen-star.svg),
+                      url(imgs/abzijgen-star.svg),
                       url(imgs/abzijgen-star.svg);
     background-repeat: no-repeat;
-    background-size: 30%, 
-                     25%,
-                     10%;
-    background-position: -15% 100%, 
-                         12% 100%,
-                         91% 84%;
+    background-size: 5%,
+                     10%,
+                     8%;
+    background-position: 13% 75%,
+                         91% 84%,
+                         17% 92%;
 }
 .locations__header {
-    font-weight: 400;
-    color: var(--green);
-    letter-spacing: 1px;
+
 }
 .locations__list {
     list-style: none;
@@ -186,4 +193,32 @@ input {
 
 .locations__list li strong {
     color: var(--gold);
+}
+
+/* ---Contact--- */
+
+.contact {
+    background-image: url(imgs/abzijgen-leaf-left.svg), 
+                      url(imgs/abzijgen-leaf-flat-left.svg);
+    background-repeat: no-repeat;
+    background-size: 30%, 
+                     25%;
+    background-position:  115% 130%, 
+                          80% 105%;
+    margin-bottom: 0;
+    padding-bottom: 125px;
+}
+.contact__email-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em;
+}
+.contact__email-form input, .contact__email-form textarea {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+.contact__btn {
+    width: 100%;
+    margin: 0;
 }

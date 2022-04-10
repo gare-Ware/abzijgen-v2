@@ -16,16 +16,16 @@
         <img class="intro__cbd" src="imgs/abzijgen-cbd.svg" alt="Abzijgen organic cbd logo">
         <p class="intro__colorado">MADE IN COLORADO</p>
         <p class="intro__find-product">Find our product in stores:</p>
-        <button type="submit" class="intro__find-btn">FIND ABZIJGEN</button>
-        <a class="intro__contact-us" href="mailto:abzijgen036@gmail.com">or contact us</a>
+        <a type="submit" class="site-btn intro__find-btn" href="#locations">FIND ABZIJGEN</a>
+        <a class="intro__contact-us" href="#contact">or contact us</a>
     </section>
-    <section class="container about-us">
-        <h2 class="about-us__header">ABOUT US</h2>
+    <section id="about" class="container about-us">
+        <h2 class="section-header about-us__header">ABOUT US</h2>
         <p class="about-us__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <img class="about-us__drum" src="imgs/abzijgen-drum.svg" alt="Potawatomi drum">
     </section>
-    <section class="container locations">
-        <h2 class="locations__header">IN-STORE LOCATIONS</h2>
+    <section id="locations" class="container locations">
+        <h2 class="section-header locations__header">IN-STORE LOCATIONS</h2>
         <ul class="locations__list">
             <li>
                 <strong>Lorem ipsum dolor sit amet</strong><br>
@@ -45,5 +45,15 @@
         </ul>
         <img class="about-us__maraca" src="imgs/abzijgen-maraca-rotated.svg" alt="Potawatomi maraca">
     </section>
+    <section id="contact" class="container contact">
+        <h2 class="section-header contact__header">GET IN TOUCH!</h2>
+        <form id="emailForm" class="contact__email-form" action="https://formsubmit.co/abzijgen036@gmail.com" method="POST">
+            <input type="email" name="email" placeholder="enter email"required>
+            <textarea name="message" placeholder="your message" rows="5" required></textarea>
+            <button type="submit" class="site-btn contact__btn">FIND ABZIJGEN</button>
+        </form>
+    </section>
 </body>
 </html>
+
+<!-- <input type="hidden" name="_next" value="https://abzijgen.com/thankyou.html"> -->
