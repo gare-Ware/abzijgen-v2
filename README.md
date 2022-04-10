@@ -13,9 +13,13 @@ A promotional website for a New Jersey startup CBD company.
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, Framework of choice
+**Tech used:** HTML & CSS
 
-Client provided a label only which I used to generate SVG images of the different label/logo elements and design the site to mimic their brand. SVG elements were extracted from the logo via Adobe Illustrator. A mockup was rendered in Figma for the client's approval and most of the site was then built. I am currently waiting on data from the client (product images and details, in-store locations, etc.). Coming soon page was put up at the custom domain (abzijgen.com) months ago to begin spreading the word and collecting user input email addresses. Utilized SEO practices to achieve the top spot in Google search results.
+Client provided a label only which I used to generate SVG images of the different label/logo elements and design the site to mimic their brand. SVG elements were extracted from the logo via Adobe Illustrator. A mockup was rendered in Figma for the client's approval and most of the site was then built. 
+
+I am currently waiting on data from the client (product images and details, in-store locations, etc.). Coming soon page was put up at the custom domain (abzijgen.com) months ago to begin spreading the word and collecting user input email addresses. Utilized SEO practices to achieve the top spot in Google search results.
+
+HTML form backend platform FormSubmit used to implement form functionality. 
 
 ## Lessons Learned:
 
