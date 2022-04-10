@@ -41,9 +41,18 @@ input, textarea {
     opacity: .6;
 }
 
+/* ---Section container--- */
+
+.container {
+    padding: 0em 1em 2em 1em;
+    margin-bottom: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
 .site-btn {
     display: block;
-    width: 90%;
+    /* width: 90%; */
     border: none;
     background-color: var(--green);
     color: var(--black);
@@ -51,8 +60,7 @@ input, textarea {
     font-weight: 700;
     letter-spacing: .8px;
     padding: .85em 0;
-    margin-bottom: 1em;
-    margin: 0 1em 1em 1em;
+    margin: 0 2em 1em 2em;
     border-radius: 10px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: transform 300ms;
@@ -72,29 +80,23 @@ input, textarea {
 .intro {
     margin-bottom: 2em;
     padding-bottom: 2em;
-    background-image: url("imgs/abzijgen-flower-top-left.svg"), 
-                      url("imgs/abzijgen-leaf-left.svg"), 
+    background-image: url("imgs/abzijgen-leaf-left.svg"), 
                       url("imgs/abzijgen-leaf-right.svg"),
-                      url("imgs/abzijgen-leaf-flat-right.svg"),
                       url("imgs/abzijgen-star.svg"),
                       url("imgs/abzijgen-star.svg"),
                       url("imgs/abzijgen-star.svg"),
                       url("imgs/abzijgen-star.svg"),
                       url("imgs/abzijgen-star.svg");
     background-repeat: no-repeat;
-    background-size: 25%, /* flower top left */
-                     10%, /* leaf-left */
+    background-size: 10%, /* leaf-left */
                      15%, /* leaf-right */
-                     25%, /* leaf-flat-right */
                      10%, /* star */
                      5%, /* star */
                      8%, /* star */
                      4%, /* star */
                      8%; /* star */
-    background-position: 0% 0%, /* flower top left */
-                         55% 4%, /* leaf-left */
+    background-position: 55% 4%, /* leaf-left */
                          67% 8%, /* leaf-right */
-                         -10% 75%, /* leaf-flat-right */
                          90% 6%, /* star 1 */
                          5% 34%, /* star 2 */
                          15% 37%, /* star 3 */
@@ -103,11 +105,14 @@ input, textarea {
 }
 .intro__logo {
     margin-top: 60px;
+    max-width: 525px;
 }
 .intro__tincture {
+    max-width: 525px;
 }
 .intro__cbd {
     width: 95%;
+    max-width: 525px;
 }
 .intro__colorado {
     color: var(--green);
@@ -121,19 +126,15 @@ input, textarea {
 }
 
 .intro__find-btn {
-
+    max-width: 525px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .intro__contact-us {
     border-bottom: solid #F5F5F5 1px;
     letter-spacing: .7px;
 }
 
-/* ---Section container--- */
-
-.container {
-    padding: 0em 1em 2em 1em;
-    margin-bottom: 2em;
-}
 
 /* ---About us--- */
 
@@ -193,25 +194,18 @@ input, textarea {
 
 .locations__list li strong {
     color: var(--gold);
+    font-size: 1.2rem;
 }
 
 /* ---Contact--- */
 
 .contact {
-    background-image: url(imgs/abzijgen-leaf-left.svg), 
-                      url(imgs/abzijgen-leaf-flat-left.svg);
-    background-repeat: no-repeat;
-    background-size: 30%, 
-                     25%;
-    background-position:  115% 130%, 
-                          80% 105%;
-    margin-bottom: 0;
-    padding-bottom: 125px;
+    margin: 0 auto;
 }
 .contact__email-form {
     display: flex;
     flex-direction: column;
-    margin: 0 1em;
+    margin: 0 0em;
 }
 .contact__email-form input, .contact__email-form textarea {
     font-size: 1.2rem;
@@ -220,5 +214,235 @@ input, textarea {
 
 .contact__btn {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
+}
+
+@media (min-width: 520px) {
+    .intro {
+        background-image: url("imgs/abzijgen-leaf-left.svg"), 
+                          url("imgs/abzijgen-leaf-right.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg");
+        background-size: 10%, /* leaf-left */
+                         15%, /* leaf-right */
+                         10%, /* star */
+                         5%, /* star */
+                         8%, /* star */
+                         4%, /* star */
+                         8%; /* star */
+        background-position: 55% 1%, /* leaf-left */
+                             67% 7%, /* leaf-right */
+                             90% 6%, /* star 1 */
+                             5% 37%, /* star 2 */
+                             15% 40%, /* star 3 */
+                             92% 72%, /* star 4 */
+                             87% 76%; /* star 5 */
+    }
+}
+
+@media (min-width: 625px) {
+    .intro {
+        background-image: url("imgs/abzijgen-leaf-left.svg"), 
+                          url("imgs/abzijgen-leaf-right.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg");
+        background-size: 10%, /* leaf-left */
+                         15%, /* leaf-right */
+                         10%, /* star */
+                         5%, /* star */
+                         8%, /* star */
+                         4%, /* star */
+                         8%; /* star */
+        background-position: 55% 1%, /* leaf-left */
+                             67% 4%, /* leaf-right */
+                             90% 6%, /* star 1 */
+                             5% 37%, /* star 2 */
+                             15% 40%, /* star 3 */
+                             92% 72%, /* star 4 */
+                             87% 76%; /* star 5 */
+    }
+}
+
+@media (min-width: 720px) {
+    html {
+        font-size: 23px;
+    }
+
+    .container {
+        padding: 0em 2em 2em 2em;
+    }
+    
+    .intro {
+        background-image: url("imgs/abzijgen-leaf-left.svg"), 
+                          url("imgs/abzijgen-leaf-right.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg");
+        background-size: 8%, /* leaf-left */
+                         12%, /* leaf-right */
+                         7%, /* star 1 */
+                         3%, /* star 1 */
+                         6%, /* star 3 */
+                         4%, /* star 4 */
+                         8%; /* star 5 */
+        background-position: 54% 1%, /* leaf-left */
+                             63% 6%, /* leaf-right */
+                             90% 6%, /* star 1 */
+                             5% 37%, /* star 2 */
+                             15% 40%, /* star 3 */
+                             92% 72%, /* star 4 */
+                             87% 76%; /* star 5 */
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 768px) {
+    .intro {
+        background-image: url("imgs/abzijgen-leaf-left.svg"), 
+                          url("imgs/abzijgen-leaf-right.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg");
+        background-size: 8%, /* leaf-left */
+                         12%, /* leaf-right */
+                         7%, /* star 1 */
+                         3%, /* star 2 */
+                         6%, /* star 3 */
+                         4%, /* star 4 */
+                         8%; /* star 5 */
+        background-position: 54% 1%, /* leaf-left */
+                             63% 6%, /* leaf-right */
+                             90% 6%, /* star 1 */
+                             5% 37%, /* star 2 */
+                             10% 40%, /* star 3 */
+                             92% 68%, /* star 4 */
+                             87% 72%; /* star 5 */
+    }
+    .intro__find-btn {
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 820px) {
+    .intro {
+        background-image: url("imgs/abzijgen-leaf-left.svg"), 
+                          url("imgs/abzijgen-leaf-right.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg");
+        background-size: 8%, /* leaf-left */
+                         12%, /* leaf-right */
+                         7%, /* star 1 */
+                         3%, /* star 2 */
+                         6%, /* star 3 */
+                         4%, /* star 4 */
+                         8%; /* star 5 */
+        background-position: 54% 1%, /* leaf-left */
+                             63% 4%, /* leaf-right */
+                             90% 6%, /* star 1 */
+                             5% 37%, /* star 2 */
+                             10% 40%, /* star 3 */
+                             92% 68%, /* star 4 */
+                             87% 72%; /* star 5 */
+    }
+}
+
+@media (min-width: 1150px) {
+    body {
+        background-image: url("imgs/abzijgen-drum-left.svg"),
+                          url("imgs/abzijgen-maraca.svg"),
+                          url("imgs/abzijgen-leaf-slight-right.svg"),
+                          url("imgs/abzijgen-leaf-flat-right.svg"),
+                          url("imgs/abzijgen-leaf-left.svg"),
+                          url("imgs/abzijgen-flower-half-right.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-flower.svg");
+        background-repeat: no-repeat;
+        background-size: 20%,
+                         20%,
+                         20%,
+                         15%,
+                         14%,
+                         10%,
+                         5%,
+                         5%,
+                         5%,
+                         10%;
+        background-position: 17% 2%,
+                             87% 2%,
+                             -9% 10%,
+                             10% 15%,
+                             98% 17%,
+                             0% 30%,
+                             10% 40%,
+                             95% 60%,
+                             10% 90%,
+                             100% 100%;
+    }
+    .site-btn {
+        border-radius: 15px;
+        transition: 300ms;
+    }
+    .site-btn:hover, .site-btn:focus {
+        background-color: #99dd68;
+    }
+    .site-btn:active {
+        transform: translateY(4px);
+    }
+    .intro {
+        background-image: url("imgs/abzijgen-leaf-left.svg"), 
+                          url("imgs/abzijgen-leaf-right.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg"),
+                          url("imgs/abzijgen-star.svg");
+        background-size: 8%, /* leaf-left */
+                         12%, /* leaf-right */
+                         7%, /* star 1 */
+                         3%, /* star 2 */
+                         6%, /* star 3 */
+                         4%, /* star 4 */
+                         8%; /* star 5 */
+        background-position: 54% 1%, /* leaf-left */
+                             63% 4%, /* leaf-right */
+                             90% 40%, /* star 1 */
+                             5% 37%, /* star 2 */
+                             10% 40%, /* star 3 */
+                             92% 68%, /* star 4 */
+                             87% 72%; /* star 5 */
+    }
+    .container { 
+    }
+    .locations {
+    }
+    .locations__list {
+        display: grid;
+        grid-template: 1fr 1fr/ 1fr 1fr;
+        gap: 1em;
+    }
+    .locations__list li {
+        padding: 1em;
+    }
+    .locations__list li:nth-last-of-type(1) {
+        grid-column: 1/3;
+        justify-self: center;
+    }
+    .contact__btn {
+        max-width: 300px;
+    }
 }
