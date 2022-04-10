@@ -9,6 +9,8 @@ A promotional website for a New Jersey startup CBD company.
 
 <img width="668" alt="abzijgen" src="https://user-images.githubusercontent.com/92345400/162635598-d45ec8ee-baa4-4562-abaf-009e6b9535c8.png">
 
+<img width="668" alt="abzijgen-coming-soon" src="https://user-images.githubusercontent.com/92345400/162636310-339b7c5e-699e-4c96-8efb-cb2e326f4295.png">
+
 ## How It's Made:
 
 **Tech used:** HTML, CSS, JavaScript, Framework of choice
